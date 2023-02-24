@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <script src="./script/script.js" type="module"></script>
+    <title>MoVintage</title>
+  </head>
+  <body>
+    <div class="back-to-future"><a href="#">↫</a></div>
+    <div class="overlay">
+      <div class="signin-container">
+        <img
+          src="./img/Per sezione LOGIN/icons8-occhiali-vintage-96.png"
+          alt="login-img"
+        />
+        <form id="login">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <button type="submit" class="login-button">Sign In</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay-details"></div>
+    <div class="my-list-overlay"></div>
+    <header>
+      <div class="left-header">
+        <img src="./img/logo.png" alt="logo-img" class="logo" />
+        <button class="choose-cat">Vai a</button>
+        <div class="choose-container hide">
+          <div class="choose-ages">
+            <a href="#ages-60" class="ages-60">
+              <h3>Anni '60</h3>
+            </a>
+            <a href="#ages-70" class="ages-70">
+              <h3>Anni '70</h3>
+            </a>
+            <a href="#ages-80" class="ages-80">
+              <h3>Anni '80</h3>
+            </a>
+            <a href="#ages-90" class="ages-90">
+              <h3>Anni '90</h3>
+            </a>
+          </div>
+          <div class="separator"></div>
+          <a href="#genres">
+            <h3>Vedi per genere</h3>
+          </a>
+        </div>
+      </div>
+      <div class="right-header">
+        <!-- <div class="container-search">
+          <input
+            type="text"
+            placeholder="Cerca"
+            name="search-movie"
+            class="search-movie"
+          />
+          <svg
+            fill="#000000"
+            width="20px"
+            height="20px"
+            viewBox="0 0 1920 1920"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </div> -->
+        <div class="fav-box">
+          <!-- on CSS set fav-box visibility to hidden  -->
+          <img
+            src="./img/heart.svg"
+            alt="fav-box-img"
+            class="fav-box-img"
+            style="display: none"
+          />
+        </div>
+        <div class="signin-profile-container">
+          <img
+            class="profile-img"
+            style="display: none"
+            src="./img/img_profile_avatar_animals_cat_circ.png"
+            alt="profile-img"
+          />
+          <!-- on CSS set profile-img visibility to hidden  -->
+          <button class="signin-button">Sign In</button>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <img src="./img/hero.png" alt="hero-img" />
+    </div>
+    <!-- ☎️|📽️-🪩|🕺-🛼-🎮💾 Possibili idee per i card-container -->
+    <main>
+      <div class="filmstrip">
+        <h1 id="ages-60">📽️ Anni '60</h1>
+        <div class="card-container card-container60"></div>
+      </div>
+      <div class="filmstrip">
+        <h1 id="ages-70">🕺 Anni '70</h1>
+        <div class="card-container"></div>
+      </div>
+      <div class="filmstrip">
+        <h1 id="ages-80">🛼 Anni '80</h1>
+        <div class="card-container card-container80"></div>
+      </div>
+      <div class="filmstrip">
+        <h1 id="ages-90">💾 Anni '90</h1>
+        <div class="card-container"></div>
+      </div>
+      <div class="filmstrip" id="genres">
+        <h1 id="action">Azione</h1>
+        <div class="card-container"></div>
+      </div>
+      <div class="filmstrip">
+        <h1 id="adventure">Avventura</h1>
+        <div class="card-container"></div>
+      </div>
+      <div class="filmstrip">
+        <h1 id="animation">Animazione</h1>
+        <div class="card-container"></div>
+      </div>
+      <div class="filmstrip">
+        <h1 id="science-f">Fantascienza</h1>
+        <div class="card-container"></div>
+      </div>
+      <div class="filmstrip">
+        <h1 id="thriller">Thriller</h1>
+        <div class="card-container"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-img">
+        <img src="./img/logo.png" alt="logo footer" />
+      </div>
+      <div class="footer-info">
+        <a href="#">
+          <p>Termini e utilizzo</p>
+        </a>
+        <a href="#">
+          <p>Invio commenti</p>
+        </a>
+        <a href="#">
+          <p>Aiuto</p>
+        </a>
+        <a href="#">
+          <p>Informativa sui cookie</p>
+        </a>
+        <p class="copyright">
+          © 1996-2023, Movintage.com, by Ettore Sanfilippo
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
